@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   super-lint:
-    name: lint code base
+    name: Perform Dastardly Scan
     runs-on: ubuntu-latest
     
     steps:
