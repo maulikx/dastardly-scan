@@ -1,0 +1,14 @@
+name: Dastardly Scan
+
+on: [push]
+
+jobs:
+  super-lint:
+    name: lint code base
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Dastardly Scan Action
+        uses: PortSwigger/dastardly-github-action@v1.0.0
+        with: 
+          target-url: 'https://ginandjuice.shop/'
